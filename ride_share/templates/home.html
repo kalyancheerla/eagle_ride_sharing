@@ -1,1 +1,18 @@
-HELLO
+{% extends 'base.html' %} {% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-center align-items-center" style="background-color: #e6f4ff; height: 80vh;">
+    <figure class="text-center">
+        {% load static %}
+        <img src={% static "images/eagleridesharing.png" %} width="70" height="70" class="d-inline-block align-top" alt="Logo">
+        <blockquote class="blockquote">
+            <h1 class="display-2 display-md-3 display-lg-4" style="color: #333; font-weight: bold;">
+                Eagle Ride Share
+            </h1>
+        </blockquote>
+        <figcaption class="blockquote-footer mt-1" style="font-size: 1 rem;">
+            Nothing in here.. yet.
+        </figcaption>
+    </figure>
+</div>
+{% endblock %}
