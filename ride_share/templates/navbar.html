@@ -21,14 +21,14 @@
         <ul class="navbar-nav ms-lg-auto">
             {% if user.is_authenticated %}
             <li class="nav-item">
-                <a href="{% url 'user_profile' %}" class="nav-link fw-bold" style="color: #ffcc00;">Profile</a>
+                <a href="{% url 'view_profile' %}" class="nav-link fw-bold" style="color: #ffcc00;">Profile</a>
             </li>
             <li class="nav-item">
-                <a href="/signout" class="nav-link" style="color: #ffcc00;">signout</a>
+                <a href="{% url 'logout' %}" class="nav-link" style="color: #ffcc00;">logout</a>
             </li>    
             {% else %}
             <li class="nav-item">
-                <a href="{% url 'user_login' %}" class="nav-link fw-bold" style="color: #ffcc00;">Login/Signup</a>
+                <a href="{% url 'login' %}" class="nav-link fw-bold" style="color: #ffcc00;">Login/Signup</a>
             </li>
             {% endif %}
         </ul>
